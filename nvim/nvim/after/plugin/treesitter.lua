@@ -10,6 +10,9 @@ require('nvim-treesitter.configs').setup {
     highlight = {
         enable = true,
         additional_vim_regex_highlighting = false,
+
+        -- disabled because of lervag/vimtex
+        disable = {'latex'}
     },
 
     textobjects = {
