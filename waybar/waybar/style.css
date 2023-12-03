@@ -1,57 +1,68 @@
-@define-color Rosewater #f5e0dc;
-@define-color Flamingo #f2cdcd;
-@define-color Pink #f5c2e7;
-@define-color Mauve #cba6f7;
-@define-color Red #f38ba8;
-@define-color Maroon #eba0ac;
-@define-color Peach #fab387;
-@define-color Yellow #f9e2af;
-@define-color Green #a6e3a1;
-@define-color Teal #94e2d5;
-@define-color Sky #89dceb;
-@define-color Sapphire #74c7ec;
-@define-color Blue #89b4fa;
-@define-color Lavender #b4befe;
-@define-color OverlayTwo #9399b2;
-@define-color OverlayOne #7f849c;
-@define-color OverlayZero #6c7086;
-@define-color SurfaceTwo #585b70;
-@define-color SurfaceOne #45475a;
-@define-color SurfaceZero #313244;
-@define-color Base #1e1e2e;
-@define-color Mantle #181825;
-@define-color Crust #11111b;
-@define-color Text #cdd6f4;
-@define-color SubtextOne #bac2de;
-@define-color SubtextZero #a6adc8;
+@define-color base   #1e1e2e;
+@define-color mantle #181825;
+@define-color crust  #11111b;
+
+@define-color text     #cdd6f4;
+@define-color subtext0 #a6adc8;
+@define-color subtext1 #bac2de;
+
+@define-color surface0 #313244;
+@define-color surface1 #45475a;
+@define-color surface2 #585b70;
+
+@define-color overlay0 #6c7086;
+@define-color overlay1 #7f849c;
+@define-color overlay2 #9399b2;
+
+@define-color blue      #89b4fa;
+@define-color lavender  #b4befe;
+@define-color sapphire  #74c7ec;
+@define-color sky       #89dceb;
+@define-color teal      #94e2d5;
+@define-color green     #a6e3a1;
+@define-color yellow    #f9e2af;
+@define-color peach     #fab387;
+@define-color maroon    #eba0ac;
+@define-color red       #f38ba8;
+@define-color mauve     #cba6f7;
+@define-color pink      #f5c2e7;
+@define-color flamingo  #f2cdcd;
+@define-color rosewater #f5e0dc;
 
 * {
     font-family: "Hack Nerd Font";
     font-size: 14;
-    color: @Text;
+    color: @text;
 }
 
 window#waybar {
-    background-color: shade(@Base, 0.9);
-    border-bottom: 3px solid alpha(@Crust, 0.3);
-    color: @Text;
+    background-color: shade(@base, 0.9);
+    border-bottom: 3px solid alpha(@crust, 0.3);
+    color: @text;
     transition-property: background-color;
     transition-duration: .5s;   
 }
 
 #clock.1 {
-    background-color: @SurfaceZero;
+    background-color: @surface0;
     border-radius: 8px 8px 8px 8px;
     margin: 6px 0px 9px 0px;
     padding: 2px 8px 2px 8px;
 }
 
+#custom-power {
+    background-color: @surface0;
+    border-radius: 16px 16px 16px 16px;
+    margin: 6px 6px 9px 0px;
+    padding: 2px 9px 2px 5px;
+}
+
 #clock.2, #network.1, #battery.1, #pulseaudio.1 {
-    background-color: @SurfaceZero;
+    background-color: @surface0;
 }
 
 #clock.3, #network.2, #battery.2, #pulseaudio.2 {
-    background-color: @SurfaceZero;
+    background-color: @surface0;
 }
 
 /* left elements */
@@ -81,25 +92,25 @@ window#waybar {
 
 /* colored elements */
 #pulseaudio.1 {
-    color: @Blue;
+    color: @blue;
 }
 #network.1 {
-    color: @Peach;
+    color: @peach;
 }
 #clock.2 {
-    color: @Red;
+    color: @red;
 }
 
 /* battery colors */
 #battery.1 {
-    color: @Green;
+    color: @green;
 }
 #battery.1.charging, #battery.1.plugged {
-    color: @Green;
+    color: @green;
 }
 #battery.1.warning:not(.charging) {
-    color: @Yellow;
+    color: @yellow;
 }
 #battery.1.critical:not(.charging) {
-    color: @Red;
+    color: @red;
 }

@@ -5,7 +5,7 @@
         "hyprland/window",
     ],
     "modules-center": ["clock#1"],
-    "modules-right": ["network#1", "network#2", "pulseaudio#1", "pulseaudio#2", "battery#1", "battery#2", "clock#2", "clock#3"],
+    "modules-right": ["network#1", "network#2", "pulseaudio#1", "pulseaudio#2", "battery#1", "battery#2", "clock#2", "clock#3", "custom/power"],
 
     "clock#1": {
         "format": "{:%H:%M}",
@@ -99,4 +99,10 @@
         "tooltip-format-disconnected": "Disconnected",
         "on-click": "nm-connection-editor",
     },
+    "custom/power": {
+		"format": "",
+        "tooltip": false,
+        "on-click": "wlogout --protocol layer-shell"
+		//"on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#005566 --button-background=#009999 --button-border=#002b33 --border-bottom=#002b33"
+	},
 }
