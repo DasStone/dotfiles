@@ -1,4 +1,4 @@
-link_target_path = "$(@__DIR__)/.bashrc"
+link_target_path = "$(@__DIR__)/bashrc"
 
 if Sys.islinux()
     config_path = "$(ENV["HOME"])/.bashrc"
