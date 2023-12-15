@@ -19,8 +19,8 @@ uniform highp sampler2D tex;
 #define HDR_SATURATION 1.0// saturation
 #define LENS_DISTORTION_AMOUNT 1.0
 #define NOISE_THRESHOLD 0.0001
-#define PHOSPHOR_BLUR_AMOUNT 0.23 // Amount of blur for phosphor glow
-#define PHOSPHOR_GLOW_AMOUNT 0.23 // Amount of phosphor glow
+#define PHOSPHOR_BLUR_AMOUNT 0.34 // Amount of blur for phosphor glow
+#define PHOSPHOR_GLOW_AMOUNT 0.34 // Amount of phosphor glow
 #define SHARPNESS 0.25
 #define SUPERSAMPLING_SAMPLES 16.0
 #define VIGNETTE_RADIUS 0.8 // larger vignette radius
