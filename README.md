@@ -14,7 +14,7 @@ Some parts of my setup are heavily inspired by others.
 - **dotfiles organisation**: I really liked his `link.jl` scripts!
 
 ### User [AndreasChris](https://github.com/AndreasChris):
-- **vim**: I'm currently using **nvim** as my main editor, but sometimes it might not be possible for me to use it (e.g. remote server where I can't install any packages). Andreas was so kind to give me his `.vimrc` which I found to be very reliable. I probably won't change it, since I will use **nvim** vherever possible. Here is a [link](https://itsec.tum.academy/.vimrc) to his `vim.rc`.
+- **vim**: I'm currently using **nvim** as my main editor, but sometimes it might not be possible for me to use it (e.g. remote server where I can't install any packages). Andreas was so kind to give me his `.vimrc` which I found to be very reliable. I probably won't change it, since I will use **nvim** vherever possible. Here is a [link](https://itsec.tum.academy/.vimrc) to his `.vimrc`.
 
 ## Bootloader
 
@@ -37,7 +37,7 @@ I personally like to use **Grub**, since it has always worked for me without a h
 - [wdsrocha's wallpapers](https://github.com/wdsrocha/wallpapers)
 - [Gwynsav's walls](https://github.com/Gwynsav/walls)
 
-## Setup Stuff I might forget
+## Setup Stuff I Might Forget
 
 ### Linux User Groups:
 
