@@ -31,7 +31,7 @@
 
 * {
     font-family: "Hack Nerd Font";
-    font-size: 14;
+    font-size: 14px;
     color: @text;
 }
 
@@ -52,19 +52,20 @@ window#waybar {
 }
 */
 
-#custom-power {
-    background-color: @surface0;
-    border-radius: 16px 16px 16px 16px;
-    margin: 7px 6px 9px 0px;
-    padding: 2px 9px 2px 5px;
-}
-
 #cpu.1, #clock.2, #network.1, #battery.1, #pulseaudio.1 {
     background-color: @surface0;
 }
 
 #cpu.2, #clock.3, #network.2, #battery.2, #pulseaudio.2 {
     background-color: @surface0;
+}
+
+/* power module */
+#custom-power {
+    background-color: @surface0;
+    border-radius: 16px 16px 16px 16px;
+    margin: 7px 6px 9px 0px;
+    padding: 2px 9px 2px 5px;
 }
 
 /* left elements */

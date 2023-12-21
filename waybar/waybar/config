@@ -93,7 +93,6 @@
         "format": "{volume:2}%",
         "on-click": "pavucontrol",
     },
-
     "network#1": {
         "format": "{icon}",
         "format-wifi": "󰖩",
