@@ -1,6 +1,7 @@
 local wk = require('which-key')
 local telescope = require('telescope')
 local builtin = require('telescope.builtin')
+local mini_files = require('mini.files')
 
 vim.g.mapleader = " "
 
@@ -11,15 +12,19 @@ wk.register({
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
+local minifiles_toggle = function(...)
+    if not MiniFiles.close() then MiniFiles.open(...) end
+end
+
 wk.register({
     e = {
-        vim.cmd.Ex,
-        'Explorer',
+        minifiles_toggle,
+        'Mini Files',
     },
-    r = {
-        function() vim.cmd.Ex('.') end,
-        'Explorer CWD',
-    },
+    --r = {
+    --    function() vim.cmd.Ex('.') end,
+    --    'Explorer CWD',
+    --},
 
     -- Telescope keybinds
     t = {

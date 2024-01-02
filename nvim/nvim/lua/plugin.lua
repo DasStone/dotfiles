@@ -72,6 +72,19 @@ require("lazy").setup({
 
     'windwp/nvim-autopairs', -- closes brackets automatically
 
+    -- "Swiss Army knife" for nvim
+    {
+        'echasnovski/mini.nvim',
+        version = false,
+        config = function()
+            require('mini.files').setup({
+                windows = {
+                    max_number = 3,
+                },
+            })
+        end,
+    },
+
     -- LSP and autocompletion
     'neovim/nvim-lspconfig',
     'hrsh7th/nvim-cmp', -- completion framework (basically just api)

@@ -28,3 +28,15 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 4 -- "look ahead" while scrolling
 vim.opt.signcolumn = 'yes' -- lsp hints or similar are placed in the signcolumn to the left, preventing screen "jiggle"
+
+-- Autocommand for MiniFilesWindowOpen event
+vim.api.nvim_create_autocmd('User', {
+    pattern = 'MiniFilesWindowOpen',
+    callback = function(args)
+      local win_id = args.data.win_id
+
+      -- Customize window-local settings
+      vim.wo[win_id].winblend = 0
+      vim.api.nvim_win_set_config(win_id, { border = 'double' })
+    end,
+  })
