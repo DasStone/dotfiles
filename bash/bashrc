@@ -12,9 +12,6 @@ then
 fi
 export PATH
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
 	for rc in ~/.bashrc.d/*; do
@@ -26,15 +23,13 @@ fi
 
 unset rc
 
+# powerline
 eval "$(oh-my-posh init bash --config ~/.poshthemes/catppuccin.omp.json)"
-. "$HOME/.cargo/env"
 
 # Alias definitions
-alias aedit='nvim ~/.config/alacritty/alacritty.yml'
-alias bashrc='nvim ~/.bashrc'
 alias hypr='nvim ~/.config/hypr/hyprland.conf'
 alias wisdom='fortune | cowsay'
-alias dockerdaemon='sudo systemctl start docker'
 alias present='impressive -q -t None'
+alias clock='tty-clock -c -C 3'
 
 export EDITOR=nvim

@@ -1,0 +1,22 @@
+import = ["/home/astein/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+live_config_reload = true
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "Hack Nerd Font"
+
+[window]
+dynamic_title = true
+opacity = 0.9

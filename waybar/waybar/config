@@ -41,7 +41,7 @@
     },
     "cpu#2": {
         "format": "{usage}%",
-        "on-click": "alacritty --command htop",
+        "on-click": "alacritty --command btop",
     },
     "battery#1": {
         "interval": 10,
