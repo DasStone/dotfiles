@@ -59,7 +59,7 @@ button:active,
 button:hover {
     color: @text;
 	background-color: @overlay0;
-	border: 3px solid @lavender;
+	border: 3px solid @blue;
 }
 
 /* 
