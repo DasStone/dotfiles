@@ -93,4 +93,7 @@ require("lazy").setup({
 
     -- snippet engine (required for nvim-cmp)
     'L3MON4D3/LuaSnip', -- can also be configured to help with boilerplate code
+
+    -- funny stuff
+    'eandrju/cellular-automaton.nvim',
 })

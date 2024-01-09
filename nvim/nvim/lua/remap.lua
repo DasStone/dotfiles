@@ -74,3 +74,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         }, { prefix = '<leader>' })
     end
 })
+
+-- funny stuff
+vim.keymap.set('n', '<leader>cr', function() vim.cmd('CellularAutomaton make_it_rain') end, { desc = 'lol Rain' })
+
