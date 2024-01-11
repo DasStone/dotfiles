@@ -35,5 +35,6 @@ alias hypr='nvim ~/.config/hypr/hyprland.conf'
 alias wisdom='fortune | cowsay'
 alias present='impressive -q -t None'
 alias clock='tty-clock -c -C 3'
+alias neofetch='neofetch | lolcat'
 
 export EDITOR=nvim
