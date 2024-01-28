@@ -51,6 +51,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- lspconfig.rust_analyzer.setup({
 --     capabilities = capabilities,
 -- })
--- lspconfig.pyright.setup{}
+lspconfig.pyright.setup{}
 -- lspconfig.julials.setup{}
 -- lspconfig.zls.setup{}
+lspconfig.clangd.setup{}
