@@ -31,6 +31,7 @@ alias grep='grep --color=auto'
 eval "$(oh-my-posh init bash --config ~/.poshthemes/catppuccin.omp.json)"
 
 # Alias definitions
+alias posh-update='curl -s https://ohmyposh.dev/install.sh | sudo bash -s'
 alias hypr='nvim ~/.config/hypr/hyprland.conf'
 alias wisdom='fortune | cowsay'
 alias present='impressive -q -t None'
