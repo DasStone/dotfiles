@@ -1,0 +1,126 @@
+format = """
+[](#89b4fa)\
+$os\
+$username\
+[](bg:#f5c2e7 fg:#89b4fa)\
+$directory\
+[](fg:#f5c2e7 bg:#b4befe)\
+$git_branch\
+$git_status\
+[](fg:#b4befe)\
+$c\
+$elixir\
+$elm\
+$golang\
+$gradle\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+$scala\
+"""
+
+add_newline = false
+
+[username]
+show_always = true
+style_user = "bg:#89b4fa #494D64"
+style_root = "bg:#89b4fa #494D64"
+format = '[$user ]($style)'
+disabled = false
+
+[os]
+style = "bg:#89b4fa"
+disabled = false
+
+[os.symbols]
+Windows = "󰍲 "
+Ubuntu = "󰕈 "
+SUSE = " "
+Raspbian = "󰐿 "
+Mint = "󰣭 "
+Macos = "󰀵 "
+Manjaro = " "
+Linux = "󰌽 "
+Gentoo = "󰣨 "
+Fedora = "󰣛 "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = "󰣇 "
+Artix = "󰣇 "
+CentOS = " "
+Debian = "󰣚 "
+Redhat = "󱄛 "
+RedHatEnterprise = "󱄛 "
+
+[directory]
+style = "bg:#f5c2e7 #494D64"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "..\ue5fe../"
+
+#[directory.substitutions]
+#"Documents" = "󰈙 "
+#"Downloads" = " "
+#"Music" = " "
+#"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:#b4befe #494D64"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:#b4befe #494D64"
+format = '[$all_status$ahead_behind ]($style)'
+
+[c]
+symbol = " "
+format = '[ \($symbol ($version)\) ]($style)'
+
+[elixir]
+symbol = " "
+format = '[ \($symbol ($version)\) ]($style)'
+
+[elm]
+symbol = " "
+format = '[ \($symbol ($version)\) ]($style)'
+
+[golang]
+symbol = " "
+format = '[ \($symbol ($version)\) ]($style)'
+
+[gradle]
+format = '[ \($symbol ($version)\) ]($style)'
+
+[haskell]
+symbol = " "
+format = '[ \($symbol ($version)\) ]($style)'
+
+[java]
+symbol = " "
+format = '[ \($symbol ($version)\) ]($style)'
+
+[julia]
+symbol = " "
+format = '[ \($symbol ($version)\) ]($style)'
+
+[nodejs]
+symbol = ""
+format = '[ \($symbol ($version)\) ]($style)'
+
+[nim]
+symbol = "󰆥 "
+format = '[ \($symbol ($version)\) ]($style)'
+
+[rust]
+symbol = ""
+format = '[ \($symbol ($version)\) ]($style)'
+
+[scala]
+symbol = " "
+format = '[ \($symbol ($version)\) ]($style)'
+
