@@ -1,7 +1,7 @@
-link_target_path = "$(@__DIR__)/starship.toml"
+link_target_path = "$(@__DIR__)/WindowsPowerShell"
 
-if Sys.islinux() || Sys.iswindows()
-    config_path = joinpath(homedir(), ".config", "starship.toml")
+if Sys.iswindows()
+    config_path = joinpath(homedir(), "Documents", "WindowsPowerShell")
 else
     println("OS not yet supported")
     exit()
@@ -11,11 +11,11 @@ if ispath(config_path)
     print("Config already exists, overwrite? [y/N]: ")
     answer = readline()
     if answer == "y" || answer == "Y"
-        rm(config_path)
+        rm(config_path, recursive=true)
     else
         exit()
     end
 end
 
-symlink(link_target_path, config_path)
+symlink(link_target_path, config_path, dir_target=true)
 println("Symlink created")
