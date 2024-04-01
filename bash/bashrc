@@ -28,15 +28,13 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 # powerline
-eval "$(oh-my-posh init bash --config ~/.poshthemes/catppuccin.omp.json)"
+eval "$(starship init bash)"
 
 # Alias definitions
-alias posh-update='curl -s https://ohmyposh.dev/install.sh | sudo bash -s'
 alias hypr='nvim ~/.config/hypr/hyprland.conf'
 alias wisdom='fortune | cowsay'
 alias present='impressive -q -t None'
 alias clock='tty-clock -c -C 3'
 alias neofetch='neofetch | lolcat'
-alias flag='echo "flag{e0f3f02472b24ddfd2aee7a4837c85461c88}"'
 
 export EDITOR=nvim

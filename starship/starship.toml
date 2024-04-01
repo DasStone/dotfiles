@@ -1,7 +1,7 @@
 format = """
-[](#89b4fa)\
 $os\
 $username\
+$hostname\
 [](bg:#f5c2e7 fg:#89b4fa)\
 $directory\
 [](fg:#f5c2e7 bg:#b4befe)\
@@ -20,6 +20,8 @@ $nodejs\
 $nim\
 $rust\
 $scala\
+$new_line
+$character
 """
 
 add_newline = false
@@ -28,33 +30,42 @@ add_newline = false
 show_always = true
 style_user = "bg:#89b4fa #494D64"
 style_root = "bg:#89b4fa #494D64"
-format = '[$user ]($style)'
+format = '[$user]($style)'
 disabled = false
+
+[hostname]
+ssh_only = false
+style = "bg:#89b4fa #494D64"
+format = "[@$ssh_symbol$hostname ]($style)"
+
+[character]
+success_symbol = "[◯](bold #a6e3a1)"
+error_symbol = "[✗](bold #f38ba8)"
 
 [os]
 style = "bg:#89b4fa"
 disabled = false
 
 [os.symbols]
-Windows = "󰍲 "
-Ubuntu = "󰕈 "
-SUSE = " "
-Raspbian = "󰐿 "
-Mint = "󰣭 "
-Macos = "󰀵 "
-Manjaro = " "
-Linux = "󰌽 "
-Gentoo = "󰣨 "
-Fedora = "󰣛 "
-Alpine = " "
-Amazon = " "
-Android = " "
-Arch = "󰣇 "
-Artix = "󰣇 "
-CentOS = " "
-Debian = "󰣚 "
-Redhat = "󱄛 "
-RedHatEnterprise = "󱄛 "
+Windows = " 󰍲 "
+Ubuntu = " 󰕈 "
+SUSE = "  "
+Raspbian = " 󰐿 "
+Mint = " 󰣭 "
+Macos = " 󰀵 "
+Manjaro = "  "
+Linux = " 󰌽 "
+Gentoo = " 󰣨 "
+Fedora = " 󰣛 "
+Alpine = "  "
+Amazon = "  "
+Android = "  "
+Arch = " 󰣇 "
+Artix = " 󰣇 "
+CentOS = "  "
+Debian = " 󰣚 "
+Redhat = " 󱄛 "
+RedHatEnterprise = " 󱄛 "
 
 [directory]
 style = "bg:#f5c2e7 #494D64"
@@ -75,7 +86,7 @@ format = '[ $symbol $branch ]($style)'
 
 [git_status]
 style = "bg:#b4befe #494D64"
-format = '[$all_status$ahead_behind ]($style)'
+format = '[\[$all_status$ahead_behind\]]($style)'
 
 [c]
 symbol = " "
