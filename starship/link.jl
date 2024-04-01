@@ -1,6 +1,6 @@
 link_target_path = "$(@__DIR__)/starship.toml"
 
-if Sys.islinux()
+if Sys.islinux() || Sys.iswindows()
     config_path = "$(ENV["HOME"])/.config/starship.toml"
 else
     println("OS not yet supported")
