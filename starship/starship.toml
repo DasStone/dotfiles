@@ -20,7 +20,7 @@ $nim\
 $rust\
 $scala\
 $new_line
-$character
+$character\
 """
 
 add_newline = false
@@ -46,7 +46,8 @@ style = "bg:#89b4fa"
 disabled = false
 
 [os.symbols]
-Windows = " 󰍲 "
+#Windows = " 󰍲 " # for some reason this looks broken
+Windows = ""
 Ubuntu = " 󰕈 "
 SUSE = "  "
 Raspbian = " 󰐿 "
