@@ -4,10 +4,9 @@ $username\
 $hostname\
 [](bg:#f5c2e7 fg:#89b4fa)\
 $directory\
-[](fg:#f5c2e7 bg:#b4befe)\
+[](fg:#f5c2e7)\
 $git_branch\
 $git_status\
-[](fg:#b4befe)\
 $c\
 $elixir\
 $elm\
@@ -81,57 +80,74 @@ truncation_symbol = "..\ue5fe../"
 
 [git_branch]
 symbol = ""
-style = "bg:#b4befe #494D64"
-format = '[ $symbol $branch ]($style)'
+style = "#b4befe"
+format = '[ \($symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#b4befe #494D64"
-format = '[\[$all_status$ahead_behind\]]($style)'
+style = "#b4befe"
+format = '[\[$all_status$ahead_behind\]\)]($style)'
 
 [c]
+style = "#fab387"
 symbol = " "
 format = '[ \($symbol ($version)\) ]($style)'
 
 [elixir]
+style = "#fab387"
 symbol = " "
 format = '[ \($symbol ($version)\) ]($style)'
 
 [elm]
+style = "#fab387"
 symbol = " "
 format = '[ \($symbol ($version)\) ]($style)'
 
 [golang]
+style = "#fab387"
 symbol = " "
 format = '[ \($symbol ($version)\) ]($style)'
 
 [gradle]
+style = "#fab387"
 format = '[ \($symbol ($version)\) ]($style)'
 
 [haskell]
+style = "#fab387"
 symbol = " "
 format = '[ \($symbol ($version)\) ]($style)'
 
 [java]
+style = "#fab387"
 symbol = " "
 format = '[ \($symbol ($version)\) ]($style)'
 
 [julia]
+style = "#fab387"
 symbol = " "
 format = '[ \($symbol ($version)\) ]($style)'
 
 [nodejs]
+style = "#fab387"
 symbol = ""
 format = '[ \($symbol ($version)\) ]($style)'
 
 [nim]
+style = "#fab387"
 symbol = "󰆥 "
 format = '[ \($symbol ($version)\) ]($style)'
 
 [rust]
+style = "#fab387"
 symbol = ""
 format = '[ \($symbol ($version)\) ]($style)'
 
 [scala]
+style = "#fab387"
 symbol = " "
+format = '[ \($symbol ($version)\) ]($style)'
+
+[zig]
+style = "#fab387"
+symbol = " "
 format = '[ \($symbol ($version)\) ]($style)'
 
