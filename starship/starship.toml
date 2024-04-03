@@ -38,7 +38,7 @@ style = "bg:#89b4fa #494D64"
 format = "[@$ssh_symbol$hostname ]($style)"
 
 [character]
-success_symbol = "[◯](bold #a6e3a1)"
+success_symbol = "[❯](bold #a6e3a1)"
 error_symbol = "[✗](bold #f38ba8)"
 
 [os]
@@ -128,7 +128,7 @@ format = '[ \($symbol ($version)\) ]($style)'
 
 [nodejs]
 style = "#fab387"
-symbol = ""
+symbol = " "
 format = '[ \($symbol ($version)\) ]($style)'
 
 [nim]
@@ -138,7 +138,7 @@ format = '[ \($symbol ($version)\) ]($style)'
 
 [rust]
 style = "#fab387"
-symbol = ""
+symbol = " "
 format = '[ \($symbol ($version)\) ]($style)'
 
 [scala]
