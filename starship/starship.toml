@@ -46,8 +46,7 @@ style = "bg:#89b4fa"
 disabled = false
 
 [os.symbols]
-#Windows = " 󰍲 " # for some reason this looks broken
-Windows = ""
+Windows = " 󰍲 "
 Ubuntu = " 󰕈 "
 SUSE = "  "
 Raspbian = " 󰐿 "
