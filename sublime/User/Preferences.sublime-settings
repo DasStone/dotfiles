@@ -1,0 +1,55 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Catppuccin Mocha.sublime-color-scheme",
+	"theme": "Adaptive.sublime-theme",
+
+	"font_face": "Hack Nerd Font",
+	"font_size": 11,
+	"index_files": true,
+
+	"ensure_newline_at_eof_on_save": true,
+
+	// cursor
+	"caret_style": "phase",
+	"caret_extra_top": 1,
+	"caret_extra_bottom": 1,
+
+	"always_show_minimap_viewport": true,
+
+	"detect_indentation": false,
+	"translate_tabs_to_spaces": true,
+
+	"draw_white_space":
+	[
+		"selection",
+		"leading_mixed",
+		"trailing",
+		"isolated"
+	],
+
+	"draw_unicode_white_space": "all",
+
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active",
+		"solid"
+	],
+
+	"trim_trailing_white_space_on_save": "not_on_caret",
+	"trim_only_modified_white_space": false,
+
+	"scroll_past_end": true,
+
+	"move_to_limit_on_up_down": true,
+
+	"show_encoding": true,
+	"show_line_endings": true,
+
+	"themed_title_bar": false,
+
+
+}
