@@ -38,3 +38,4 @@ alias clock='tty-clock -c -C 3'
 #alias neofetch='neofetch | lolcat'
 
 export EDITOR=nvim
+. "$HOME/.cargo/env"

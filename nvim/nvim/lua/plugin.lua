@@ -85,6 +85,10 @@ require("lazy").setup({
         end,
     },
 
+    -- Isabelle
+    'Treeniks/isabelle-syn.nvim',
+    'Treeniks/isabelle-lsp.nvim',
+
     -- LSP and autocompletion
     'neovim/nvim-lspconfig',
     'hrsh7th/nvim-cmp', -- completion framework (basically just api)

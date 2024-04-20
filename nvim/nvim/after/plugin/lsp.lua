@@ -55,3 +55,8 @@ lspconfig.pyright.setup{}
 -- lspconfig.julials.setup{}
 -- lspconfig.zls.setup{}
 lspconfig.clangd.setup{}
+
+-- Isabelle
+require('isabelle-lsp').setup({})
+lspconfig.isabelle.setup{}
+

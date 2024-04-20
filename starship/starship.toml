@@ -2,6 +2,7 @@ format = """
 $os\
 $username\
 $hostname\
+$shell\
 [](bg:#f5c2e7 fg:#89b4fa)\
 $directory\
 [](fg:#f5c2e7)\
@@ -38,8 +39,22 @@ style = "bg:#89b4fa #494D64"
 format = "[@$ssh_symbol$hostname ]($style)"
 
 [character]
+vimcmd_symbol = "[❮](bold #a6e3a1)"
+vimcmd_replace_one_symbol = "[❮](bold #a6e3a1)"
+vimcmd_replace_symbol = "[❮](bold #a6e3a1)"
+vimcmd_visual_symbol = "[❮](bold #f5c2e7)"
 success_symbol = "[❯](bold #a6e3a1)"
 error_symbol = "[✗](bold #f38ba8)"
+
+[shell]
+fish_indicator = '󰈺 '
+powershell_indicator = '/_/'
+bash_indicator = '\[\$_\]'
+zsh_indicator = '\[%_\]'
+unknown_indicator = '???'
+style = 'bg:#89b4fa #494D64'
+format = '[$indicator ]($style)'
+disabled = false
 
 [os]
 style = "bg:#89b4fa"
