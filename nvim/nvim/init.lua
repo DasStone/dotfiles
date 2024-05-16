@@ -29,6 +29,8 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 4 -- "look ahead" while scrolling
 vim.opt.signcolumn = 'yes' -- lsp hints or similar are placed in the signcolumn to the left, preventing screen "jiggle"
 
+vim.opt.foldmethod = 'marker' -- folding codblocks marked with '{{{' '}}}'
+
 -- Autocommand for MiniFilesWindowOpen event
 vim.api.nvim_create_autocmd('User', {
     pattern = 'MiniFilesWindowOpen',
@@ -40,3 +42,4 @@ vim.api.nvim_create_autocmd('User', {
       vim.api.nvim_win_set_config(win_id, { border = 'double' })
     end,
   })
+
