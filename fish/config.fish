@@ -26,7 +26,9 @@ if status is-interactive
     alias wisdom "fortune | cowsay"
     alias present "impressive -q -t None"
     alias clock "tty-clock -c -C 3"
+    alias ranger "yazi"
 
+    alias daniel "sudo xxd /dev/nvme1n1 | less"
     alias deb "sudo docker run -ti --rm debian:latest bash"
 
     # Env

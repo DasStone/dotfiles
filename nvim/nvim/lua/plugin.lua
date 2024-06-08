@@ -19,7 +19,8 @@ require("lazy").setup({
         priority = 1000,
     },
     {
-        'catppuccin/vim', name = 'catppuccin',
+        'catppuccin/vim',
+	    name = 'catppuccin',
         lazy = false,
         priority = 1000,
     },
@@ -31,7 +32,31 @@ require("lazy").setup({
             vim.opt.rtp:append(plugin.dir .. '/packages/neovim')
         end,
     },
-
+    {
+        "savq/melange-nvim",
+        lazy = false,
+        priority = 1000,
+    },
+    {
+        "rebelot/kanagawa.nvim",
+        lazy = false, -- make sure we load this during startup if it is your main colorscheme
+        priority = 1000, -- make sure to load this before all the other start plugins
+    },
+    {
+        "sainnhe/sonokai",
+        lazy = false,
+        priority = 1000,
+    },
+    {
+        "Yazeed1s/oh-lucy.nvim",
+        lazy = false,
+        priority = 1000,
+    },
+    {
+        "fcancelinha/northern.nvim",
+        lazy = false,
+        priority = 1000,
+    },
     {
         'lervag/vimtex',
         lazy = false,
