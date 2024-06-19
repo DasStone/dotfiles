@@ -12,6 +12,8 @@
 		"LSP-clangd",
 		"LSP-json",
 		"LSP-rust-analyzer",
+        "LSP-pyright",
+        "LSP-json",
 		"Materialize",
 		"Package Control",
 		"PackageDev",

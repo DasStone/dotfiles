@@ -28,6 +28,7 @@ if status is-interactive
     alias clock "tty-clock -c -C 3"
     alias ranger "yazi"
 
+    #alias daniel="sudo bash -c \"touch /danielwashere; echo Daniel was here | dd of=/dev/nvme1n1 bs=1 count=20 conv=notrunc; xxd /dev/nvme1n1 | less\""
     alias daniel "sudo xxd /dev/nvme1n1 | less"
     alias deb "sudo docker run -ti --rm debian:latest bash"
 
