@@ -19,4 +19,5 @@ family = "Hack Nerd Font"
 
 [window]
 dynamic_title = true
-opacity = 0.9
+opacity = 0.85
+
