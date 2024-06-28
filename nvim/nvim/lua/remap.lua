@@ -63,6 +63,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
                 f = { vim.lsp.buf.format, 'Format', opts },
                 r = { vim.lsp.buf.rename, 'Rename', opts },
                 a = { vim.lsp.buf.code_action, 'Code Action', opts },
+                D = { vim.lsp.buf.declaration, 'Declaration', opts },
+                d = { vim.lsp.buf.definition, 'Definition', opts },
+                i = { vim.lsp.buf.implementation, 'Implementation', opts }, -- not working
             },
 
             d = {
