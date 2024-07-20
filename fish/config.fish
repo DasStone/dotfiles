@@ -17,7 +17,6 @@ if status is-interactive
     fish_add_path -g "$HOME/Documents/isabelle/isabelle-emacs/bin/"
     #fish_add_path -g "$HOME/.cargo/bin/"
 
-
     # alias
     alias ls "ls --color=auto"
     alias grep "grep --color=auto"
@@ -33,4 +32,6 @@ if status is-interactive
 
     # Env
     set -gx EDITOR nvim
+    # prevents nmtui from destroying my eyes (https://lemmy.ml/post/18134220)
+    set -gx NEWT_COLORS 'root=black,black;window=black,black;border=white,black;listbox=white,black;label=blue,black;checkbox=red,black;title=green,black;button=white,red;actsellistbox=white,red;actlistbox=white,gray;compactbutton=white,gray;actcheckbox=white,blue;entry=lightgray,black;textbox=blue,black'
 end

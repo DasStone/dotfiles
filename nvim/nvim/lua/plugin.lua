@@ -19,7 +19,7 @@ require("lazy").setup({
         priority = 1000,
     },
     {
-        'catppuccin/vim',
+        'catppuccin/nvim',
 	    name = 'catppuccin',
         lazy = false,
         priority = 1000,
@@ -105,6 +105,8 @@ require("lazy").setup({
             require('mini.files').setup({
                 windows = {
                     max_number = 3,
+                    preview = true,
+                    width_preview = 50,
                 },
             })
         end,

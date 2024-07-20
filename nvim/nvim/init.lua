@@ -2,7 +2,7 @@ require("plugin")
 require("remap")
 
 vim.opt.termguicolors = true
-vim.cmd.colorscheme("catppuccin_mocha")
+vim.cmd.colorscheme("catppuccin-mocha")
 
 -- keeps terminal transparency with selected color theme
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })

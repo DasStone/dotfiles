@@ -58,7 +58,7 @@ lspconfig.clangd.setup{}
 
 -- Isabelle
 require('isabelle-lsp').setup({
-    isabelle_path = '~/Documents/isabelle/isabelle-language-server/bin/isabelle',
+    isabelle_path = '/home/astein/Documents/isabelle/isabelle-language-server/bin/isabelle',
 })
 local lspconfig = require('lspconfig')
 lspconfig.isabelle.setup({})
