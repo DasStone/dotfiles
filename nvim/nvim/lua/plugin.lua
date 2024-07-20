@@ -111,8 +111,14 @@ require("lazy").setup({
     },
 
     -- Isabelle
-    'Treeniks/isabelle-syn.nvim',
-    'Treeniks/isabelle-lsp.nvim',
+    'Treeniks/isabelle-syn.nvim', -- file endings and syntax highlighting
+    {
+        'Treeniks/isabelle-lsp.nvim',
+        branch = 'isabelle-language-server',
+        dependencies = {
+            'neovim/nvim-lspconfig'
+        },
+    },
 
     -- LSP and autocompletion
     'neovim/nvim-lspconfig',

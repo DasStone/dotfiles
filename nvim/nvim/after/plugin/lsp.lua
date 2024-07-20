@@ -57,6 +57,9 @@ lspconfig.pyright.setup{}
 lspconfig.clangd.setup{}
 
 -- Isabelle
-require('isabelle-lsp').setup({})
-lspconfig.isabelle.setup{}
+require('isabelle-lsp').setup({
+    isabelle_path = '~/Documents/isabelle/isabelle-language-server/bin/isabelle',
+})
+local lspconfig = require('lspconfig')
+lspconfig.isabelle.setup({})
 
