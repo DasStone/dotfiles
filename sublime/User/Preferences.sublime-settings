@@ -1,6 +1,9 @@
 {
 	"ignored_packages":
 	[
+		"LSP-json",
+		"LSP-pyright",
+		"Theme - Rose Pine",
 		"Vintage",
 	],
 	"color_scheme": "Catppuccin Mocha.sublime-color-scheme",

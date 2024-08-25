@@ -2,6 +2,9 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"LSP-json",
+		"LSP-pyright",
+		"Theme - Rose Pine",
 	],
 	"installed_packages":
 	[
