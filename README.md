@@ -43,3 +43,7 @@ Add yourself to the groups:
 ```
 wheel video audio input
 ```
+
+### Gnome `us+altgr-intl` Keyboard
+
+Install `dconf-editor`, locate `org/gnome/desktop/input-sources/sources` and add  `('xkb', 'us+altgr-intl')` to `Custom value` array
