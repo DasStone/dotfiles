@@ -11,7 +11,7 @@
   "isabelle-lsp.nvim": { "branch": "isabelle-language-server", "commit": "f909788811afa108be14b1dca56e8b8d0811ae6f" },
   "isabelle-syn.nvim": { "branch": "master", "commit": "114b06dc34edf1707be7249b5a3815733e68d4c9" },
   "kanagawa.nvim": { "branch": "master", "commit": "fe5b2c9e2549862c3dc3f3c8e9cf7ddece0f40c2" },
-  "lazy.nvim": { "branch": "main", "commit": "9a374a0fb4d3ac42dac4a129d4bead7252473c77" },
+  "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
   "lualine.nvim": { "branch": "master", "commit": "0a5a66803c7407767b799067986b4dc3036e1983" },
   "melange-nvim": { "branch": "master", "commit": "b76b906cd6ed3c3152a47924a8eb5dcb35b326d8" },
   "mini.nvim": { "branch": "main", "commit": "ebc8cb0c1f73ee6c53e0560957a37a2307a70f98" },

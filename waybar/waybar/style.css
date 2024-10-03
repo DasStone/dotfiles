@@ -36,11 +36,13 @@
 }
 
 window#waybar {
-    background-color: shade(@base, 0.9);
-    border-bottom: 3px solid alpha(@crust, 0.3);
+    background-color: alpha(@base, 0.8);
+    /*border-bottom: 3px solid alpha(@crust, 0.3);*/
     color: @text;
     transition-property: background-color;
-    transition-duration: .5s;   
+    transition-duration: .5s;
+    border-radius: 32px 32px 32px 32px;
+    padding: 20px 20px 20px 20px;
 }
 
 /*
@@ -64,7 +66,7 @@ window#waybar {
 #custom-power {
     background-color: @surface0;
     border-radius: 16px 16px 16px 16px;
-    margin: 7px 6px 9px 0px;
+    margin: 7px 10px 9px 0px;
     padding: 2px 9px 2px 5px;
 }
 
