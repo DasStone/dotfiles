@@ -12,6 +12,9 @@ if status is-interactive
     # Powerline
     starship init fish | source
 
+    # better cd
+    zoxide init fish --cmd d | source
+
     # Path
     fish_add_path -g "$HOME/.local/bin/"
     fish_add_path -g "$HOME/Documents/isabelle/isabelle-emacs/bin/"
@@ -20,15 +23,12 @@ if status is-interactive
     # alias
     alias ls "ls --color=auto"
     alias grep "grep --color=auto"
-
-    alias hacked "cmatrix -s -M 'You\'ve been hacked ¯\\_(ツ)_/¯'"
-    alias wisdom "fortune | cowsay"
+    alias ranger yy
     alias present "impressive -q -t None"
-    alias clock "tty-clock -c -C 3"
-    alias ranger "yazi"
 
-    alias daniel "sudo xxd /dev/nvme1n1 | less"
-    alias deb "sudo docker run -ti --rm debian:latest bash"
+    # fun stuff
+    alias clock "tty-clock -c -C 3"
+    alias wisdom "fortune | cowsay"
 
     # Env
     set -gx EDITOR nvim
