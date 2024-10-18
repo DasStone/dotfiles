@@ -12,6 +12,9 @@ if status is-interactive
     # Powerline
     starship init fish | source
 
+    # better cd
+    zoxide init fish --cmd d | source
+
     # Path
     fish_add_path -g "$HOME/.local/bin/"
     fish_add_path -g "$HOME/Documents/isabelle/isabelle-emacs/bin/"
