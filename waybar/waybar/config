@@ -41,7 +41,7 @@
     },
     "cpu#2": {
         "format": "{usage}%",
-        "on-click": "alacritty --command btop",
+        "on-click": "kitty -e btop",
     },
     "battery#1": {
         "interval": 10,
