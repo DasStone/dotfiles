@@ -57,10 +57,6 @@ require("lazy").setup({
         lazy = false,
         priority = 1000,
     },
-    {
-        'lervag/vimtex',
-        lazy = false,
-    },
 
     -- Mastering the vim language plugins
     "tpope/vim-repeat",
@@ -110,6 +106,13 @@ require("lazy").setup({
                 },
             })
         end,
+    },
+
+    -- Tex
+    'barreiroleo/ltex_extra.nvim',
+    {
+        'lervag/vimtex',
+        lazy = false,
     },
 
     -- Isabelle
