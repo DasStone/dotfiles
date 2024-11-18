@@ -25,6 +25,7 @@ if status is-interactive
     alias grep "grep --color=auto"
     alias ranger yy
     alias present "impressive -q -t None"
+    alias cmatrix "cmatrix -s -M 'You\'ve been hacked ¯\\_(ツ)_/¯'"
 
     # fun stuff
     alias clock "tty-clock -c -C 3"
