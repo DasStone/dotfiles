@@ -14,6 +14,9 @@ require('nvim-treesitter.configs').setup {
         -- disabled because of lervag/vimtex
         disable = {'latex'}
     },
+    indent = {
+        enable = true,
+    },
 
     textobjects = {
         select = {
