@@ -25,4 +25,4 @@ link_config_subfolder(base_path, "keybinds", "Found keybind configurations:", "k
 link_config_subfolder(base_path, "wallpapers", "Found wallpaper configurations:", "hyprpaper.conf")
 
 # hyprlock
-link_config_subfolder(base_path, "wallpapers", "Found lockscreen configurations:", "hyprlock.conf")
+link_config_subfolder(base_path, "lockscreens", "Found lockscreen configurations:", "hyprlock.conf")
