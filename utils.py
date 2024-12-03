@@ -83,3 +83,24 @@ def make_symlink(target: str, link: str):
 
     os.symlink(target, link)
     print(f"Created symlink for '{s}'")
+
+def user_selection(options: list, prompt: str):
+    # Print options
+    print(prompt)
+    for idx, item in enumerate(options, start=1):
+        print(f"{idx}: {item}")
+
+    # Get user input
+    while True:
+        try:
+            choice = int(input("Select an item: "))
+            if 1 <= choice <= len(options):
+                return options[choice - 1]
+        except ValueError:
+            pass
+
+def link_config_subfolder(base_path, options_folder, prompt, target_name):
+    options_path = join(base_path, options_folder)
+    options = os.listdir(options_path)
+    selected_option = join(base_path, user_selection(options, prompt))
+    make_symlink(join(options_path, selected_option), join(base_path, target_name))
