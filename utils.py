@@ -102,5 +102,5 @@ def user_selection(options: list, prompt: str):
 def link_config_subfolder(base_path, options_folder, prompt, target_name):
     options_path = join(base_path, options_folder)
     options = os.listdir(options_path)
-    selected_option = join(base_path, user_selection(options, prompt))
-    make_symlink(join(options_path, selected_option), join(base_path, target_name))
+    selected_option = join(options_path, user_selection(options, prompt))
+    make_symlink(selected_option, join(base_path, target_name))
