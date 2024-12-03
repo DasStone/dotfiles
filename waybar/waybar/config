@@ -5,7 +5,7 @@
         "hyprland/window",
     ],
     "modules-center": ["clock#1"],
-    "modules-right": ["network#1", "network#2", "pulseaudio#1", "pulseaudio#2", "cpu#1", "cpu#2", "battery#1", "battery#2", "clock#2", "clock#3", "custom/power"],
+    "modules-right": ["custom/aslr", "custom/aslr-toggle", "network#1", "network#2", "pulseaudio#1", "pulseaudio#2", "cpu#1", "cpu#2", "battery#1", "battery#2", "clock#2", "clock#3", "custom/power"],
 
     "clock#1": {
         "format": "{:%H:%M}",
@@ -109,7 +109,7 @@
         "tooltip-format-wifi": "{essid} {signalStrength}%",
         "tooltip-format-ethernet": "{ifname}",
         "tooltip-format-disconnected": "Disconnected",
-        "on-click": "nm-connection-editor",
+        "on-click": "kitty -e nmtui",
     },
     "custom/power": {
 		"format": "",
@@ -117,4 +117,16 @@
         "on-click": "wlogout --protocol layer-shell"
 		//"on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#005566 --button-background=#009999 --button-border=#002b33 --border-bottom=#002b33"
 	},
+    "custom/aslr": {
+        "format": "⤮",
+        "tooltip-format": "ASLR",
+    },
+    "custom/aslr-toggle": {
+        "exec": "cat /proc/sys/kernel/randomize_va_space",
+        "interval": 5,
+        "return-type": "plain",
+        "format": "{}",
+        "tooltip": false,
+        "on-click": "python /home/astein/Documents/dotfiles/waybar/waybar/scripts/aslr.py > /dev/null"  
+    },
 }

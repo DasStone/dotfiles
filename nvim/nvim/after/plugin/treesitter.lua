@@ -15,6 +15,10 @@ require('nvim-treesitter.configs').setup {
         disable = {'latex'}
     },
 
+    indent = {
+        enable = true,
+    },
+
     textobjects = {
         select = {
             enable = true,
