@@ -15,6 +15,7 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 
 vim.opt.tabstop = 4
+-- 0 means "use tabstop"
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true -- replaces tabs with spaces
@@ -23,7 +24,15 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = false -- override with filetype plugins
 
+-- makes word wrap only wrap on spaces instead of in the middle of words
+vim.opt.linebreak = true
+-- adds some visuals for wraps
+vim.opt.breakindent = true
+vim.opt.breakindentopt = "sbr"
+vim.opt.showbreak = " "
+
 vim.opt.incsearch = true
+vim.opt.ignorecase = true
 
 vim.opt.termguicolors = true
 
@@ -43,4 +52,3 @@ vim.api.nvim_create_autocmd('User', {
       vim.api.nvim_win_set_config(win_id, { border = 'double' })
     end,
   })
-

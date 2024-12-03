@@ -63,9 +63,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
                 f = { vim.lsp.buf.format, 'Format', opts },
                 r = { vim.lsp.buf.rename, 'Rename', opts },
                 a = { vim.lsp.buf.code_action, 'Code Action', opts },
-                D = { vim.lsp.buf.declaration, 'Declaration', opts },
-                d = { vim.lsp.buf.definition, 'Definition', opts },
                 i = { vim.lsp.buf.implementation, 'Implementation', opts }, -- not working
+            },
+
+            g = {
+                d = { vim.lsp.buf.definition, 'Definition', opts },
+                D = { vim.lsp.buf.declaration, 'Declaration', opts },
             },
 
             d = {
@@ -80,4 +83,4 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 -- funny stuff
 vim.keymap.set('n', '<leader>cr', function() vim.cmd('CellularAutomaton make_it_rain') end, { desc = 'lol Rain' })
-
+vim.keymap.set('n', '<leader>cg', function() vim.cmd('CellularAutomaton game_of_life') end, { desc = 'lol Game' })

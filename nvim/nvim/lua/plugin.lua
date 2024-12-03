@@ -112,6 +112,13 @@ require("lazy").setup({
         end,
     },
 
+    -- Tex
+    'barreiroleo/ltex_extra.nvim',
+    {
+        'lervag/vimtex',
+        lazy = false,
+    },
+
     -- Isabelle
     --'Treeniks/isabelle-syn.nvim', -- file endings and syntax highlighting
     --{
