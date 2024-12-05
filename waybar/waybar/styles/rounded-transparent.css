@@ -54,9 +54,11 @@ window#waybar {
 }
 */
 
+/*
 #custom-aslr.1 {
     font-size: 10px;
 }
+*/
 
 #custom-aslr.1, #custom-aslr.2 {
     background-color: alpha(@surface0, 0.8);
