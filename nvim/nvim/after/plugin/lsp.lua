@@ -53,7 +53,7 @@ lspconfig.rust_analyzer.setup({
 })
 lspconfig.pyright.setup{}
 -- lspconfig.julials.setup{}
--- lspconfig.zls.setup{}
+lspconfig.zls.setup{}
 lspconfig.clangd.setup{}
 
 -- Isabelle
