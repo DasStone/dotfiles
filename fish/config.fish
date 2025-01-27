@@ -20,6 +20,11 @@ if status is-interactive
     fish_add_path -g "$HOME/Documents/isabelle/isabelle-emacs/bin/"
     #fish_add_path -g "$HOME/.cargo/bin/"
 
+    # TeX Live
+    fish_add_path -g "$HOME/.local/texlive/2024/bin/x86_64-linux/"
+    set -gx MANPATH $MANPATH "$HOME/.local/texlive/2024/texmf-dist/doc/man/"
+    set -gx INFOPATH $INFOPATH "$HOME/.local/texlive/2024/texmf-dist/doc/info/"
+
     # alias
     alias ls "ls --color=auto"
     alias grep "grep --color=auto"
