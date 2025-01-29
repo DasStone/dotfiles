@@ -22,8 +22,8 @@ if status is-interactive
 
     # TeX Live
     fish_add_path -g "$HOME/.local/texlive/2024/bin/x86_64-linux/"
-    set -gx MANPATH $MANPATH "$HOME/.local/texlive/2024/texmf-dist/doc/man/"
-    set -gx INFOPATH $INFOPATH "$HOME/.local/texlive/2024/texmf-dist/doc/info/"
+    fish_add_path -g MANPATH $MANPATH "$HOME/.local/texlive/2024/texmf-dist/doc/man/"
+    fish_add_path -g INFOPATH $INFOPATH "$HOME/.local/texlive/2024/texmf-dist/doc/info/"
 
     # alias
     alias ls "ls --color=auto"
