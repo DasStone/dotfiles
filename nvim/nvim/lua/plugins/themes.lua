@@ -29,10 +29,14 @@ return {
                 },
             })
 
+            -- default
             vim.cmd.colorscheme('catppuccin-mocha')
 
-            -- light theme for projectors
-            -- vim.cmd.colorscheme('catppuccin-latte')
+            require('which-key').add({
+                { '<leader>m1', function() vim.cmd.colorscheme('catppuccin-mocha') end, desc = "Theme Catppuccin Mocha" },
+                { '<leader>m2', function() vim.cmd.colorscheme('catppuccin-latte') end, desc = "Theme Catppuccin Latte" },
+            })
+
         end,
     },
 }

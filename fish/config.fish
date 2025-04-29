@@ -26,10 +26,12 @@ if status is-interactive
     fish_add_path -g INFOPATH $INFOPATH "$HOME/.local/texlive/2024/texmf-dist/doc/info/"
 
     # alias
-    alias ls "ls --color=auto"
     alias grep "grep --color=auto"
     alias ranger yy
     alias present "impressive -q -t None"
+    #alias ls "ls --color=auto"
+    alias ls "eza -la --color=always"
+    alias eza "eza -la --color=always"
 
     # fun stuff
     alias clock "tty-clock -c -C 3"
