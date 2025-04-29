@@ -41,8 +41,14 @@ return {
         priority = 1000,
         config = function()
             require('which-key').add({
-                { '<leader>mt', function() vim.cmd('TransparentToggle') end, desc = "Toggle Transparency" },
+                { '<leader>mt', function() vim.cmd('TransparentToggle') end, desc = 'Toggle Transparency' },
             })
         end,
+    },
+
+    {
+        -- latex exception for treesitter is required and set in the respective plugin file
+        'lervag/vimtex',
+        lazy = false,
     },
 }
