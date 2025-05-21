@@ -30,8 +30,8 @@ if status is-interactive
     alias ranger yy
     alias present "impressive -q -t None"
     #alias ls "ls --color=auto"
-    alias ls "eza -la --color=always"
-    alias eza "eza -la --color=always"
+    alias ls "eza -l --color=always"
+    alias eza "eza -l --color=always"
 
     # fun stuff
     alias clock "tty-clock -c -C 3"
