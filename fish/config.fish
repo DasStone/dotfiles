@@ -46,5 +46,6 @@ if status is-interactive
     set -gx NEWT_COLORS 'root=black,black;window=black,black;border=white,black;listbox=white,black;label=blue,black;checkbox=red,black;title=green,black;button=white,red;actsellistbox=white,red;actlistbox=white,gray;compactbutton=white,gray;actcheckbox=white,blue;entry=lightgray,black;textbox=blue,black'
 
     # man
-    set -gx MANPAGER "nvim -c Man! -"
+    set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
+    set -gx MANROFFOPT '-c' # fixes man escaping if groff version is 1.23.0
 end
