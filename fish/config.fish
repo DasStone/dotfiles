@@ -1,6 +1,6 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    
+
     # remove greeting
     set -g fish_greeting
 
@@ -37,8 +37,14 @@ if status is-interactive
     alias clock "tty-clock -c -C 3"
     alias wisdom "fortune | cowsay"
 
+    # container shortcuts
+    alias rost "docker start -ai rost"
+
     # Env
     set -gx EDITOR nvim
     # prevents nmtui from destroying my eyes (https://lemmy.ml/post/18134220)
     set -gx NEWT_COLORS 'root=black,black;window=black,black;border=white,black;listbox=white,black;label=blue,black;checkbox=red,black;title=green,black;button=white,red;actsellistbox=white,red;actlistbox=white,gray;compactbutton=white,gray;actcheckbox=white,blue;entry=lightgray,black;textbox=blue,black'
+
+    # man
+    set -gx MANPAGER "nvim -c Man! -"
 end
