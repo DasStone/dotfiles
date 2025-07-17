@@ -54,16 +54,6 @@ window#waybar {
 }
 */
 
-/*
-#custom-aslr.1 {
-    font-size: 10px;
-}
-*/
-
-#custom-aslr.1, #custom-aslr.2 {
-    background-color: alpha(@surface0, 0.8);
-}
-
 #cpu.1, #clock.2, #network.1, #battery.1, #pulseaudio.1 {
     background-color: alpha(@surface0, 0.8);
 }
@@ -81,7 +71,7 @@ window#waybar {
 }
 
 /* left elements */
-#cpu.1, #clock.2, #network.1, #battery.1, #pulseaudio.1, #custom-aslr.1 {
+#cpu.1, #clock.2, #network.1, #battery.1, #pulseaudio.1 {
     border-radius: 8px 0px 0px 8px;
     margin: 7px 1px 9px 6px;
     padding: 2px 8px 2px 8px;
@@ -99,7 +89,7 @@ window#waybar {
 }
 
 /* right elements */
-#cpu.2, #clock.3, #network.2, #battery.2, #pulseaudio.2, #custom-aslr.2 {
+#cpu.2, #clock.3, #network.2, #battery.2, #pulseaudio.2 {
     border-radius: 0px 8px 8px 0px;
     margin: 7px 6px 9px 1px;
     padding: 2px 8px 2px 8px;
@@ -117,9 +107,6 @@ window#waybar {
 }
 #cpu.1 {
     color: @lavender;
-}
-#custom-aslr.1 {
-    color: @maroon;
 }
 
 /* battery colors */

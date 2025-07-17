@@ -17,15 +17,14 @@ if status is-interactive
 
     # Path
     fish_add_path -g "$HOME/.local/bin/"
-    fish_add_path -g "$HOME/Documents/isabelle/isabelle-emacs/bin/"
-    #fish_add_path -g "$HOME/.cargo/bin/"
+    #fish_add_path -g "$HOME/Documents/isabelle/isabelle-emacs/bin/"
+    fish_add_path -g "$HOME/.cargo/bin/"
 
     # TeX Live
     fish_add_path -g "$HOME/.local/texlive/2024/bin/x86_64-linux/"
     fish_add_path -g MANPATH $MANPATH "$HOME/.local/texlive/2024/texmf-dist/doc/man/"
     fish_add_path -g INFOPATH $INFOPATH "$HOME/.local/texlive/2024/texmf-dist/doc/info/"
 
-    # alias
     alias grep "grep --color=auto"
     alias ranger yy
     alias present "impressive -q -t None"
@@ -36,9 +35,6 @@ if status is-interactive
     # fun stuff
     alias clock "tty-clock -c -C 3"
     alias wisdom "fortune | cowsay"
-
-    # container shortcuts
-    alias rost "docker start -ai rost"
 
     # Env
     set -gx EDITOR nvim
