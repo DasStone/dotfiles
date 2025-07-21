@@ -35,6 +35,7 @@ if status is-interactive
     # fun stuff
     alias clock "tty-clock -c -C 3"
     alias wisdom "fortune | cowsay"
+    alias neofetch "fastfetch"
 
     # Env
     set -gx EDITOR nvim
