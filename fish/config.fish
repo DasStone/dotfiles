@@ -21,9 +21,9 @@ if status is-interactive
     fish_add_path -g "$HOME/.cargo/bin/"
 
     # TeX Live
-    fish_add_path -g "$HOME/.local/texlive/2024/bin/x86_64-linux/"
-    fish_add_path -g MANPATH $MANPATH "$HOME/.local/texlive/2024/texmf-dist/doc/man/"
-    fish_add_path -g INFOPATH $INFOPATH "$HOME/.local/texlive/2024/texmf-dist/doc/info/"
+    fish_add_path -g "$HOME/.local/texlive/2025/bin/x86_64-linux/"
+    fish_add_path -g MANPATH $MANPATH "$HOME/.local/texlive/2025/texmf-dist/doc/man/"
+    fish_add_path -g INFOPATH $INFOPATH "$HOME/.local/texlive/2025/texmf-dist/doc/info/"
 
     alias grep "grep --color=auto"
     alias ranger yy
