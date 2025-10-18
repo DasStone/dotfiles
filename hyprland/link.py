@@ -7,10 +7,10 @@ from utils import *
 
 check_os(OS.LINUX)
 
-target = join(target_dir(), "hypr")
-link = join(DOTCONFIG, "hypr")
+target_base = join(target_dir(), "hypr")
+link_base = join(DOTCONFIG, "hypr")
 
-make_symlink(target, link)
+make_symlink(target_base, link_base)
 
 # link specific device config
 base_path = join(target_dir(), "hypr")

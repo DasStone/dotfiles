@@ -1,6 +1,0 @@
-// Settings in here override those in "LSP-rust-analyzer/LSP-rust-analyzer.sublime-settings"
-
-{
-	// use system installed rust-analyzer
-	"command": ["rust-analyzer"],
-}
