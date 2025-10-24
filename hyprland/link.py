@@ -18,8 +18,5 @@ base_path = join(target_dir(), "hypr")
 # device
 link_config_subfolder(base_path, "devices", "Found device configurations:", "device.conf")
 
-# hyprpaper
-link_config_subfolder(base_path, "wallpapers", "Found wallpaper configurations:", "hyprpaper.conf")
-
 # hyprlock
 link_config_subfolder(base_path, "lockscreens", "Found lockscreen configurations:", "hyprlock.conf")

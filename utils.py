@@ -84,6 +84,11 @@ def make_symlink(target: str, link: str):
     os.symlink(target, link)
     print(f"Created symlink for '{s}'")
 
+def make_symlink_selection(selection_dir: str, link: str):
+    options = os.listdir(selection_dir)
+    selected_option = join(selection_dir, user_selection(options, "Found configurations:"))
+    make_symlink(selected_option, link)
+
 def user_selection(options: list, prompt: str):
     # Print options
     print(prompt)
