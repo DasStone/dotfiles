@@ -32,6 +32,8 @@ if status is-interactive
     alias ls "eza -l --color=always"
     alias eza "eza -l --color=always"
 
+    alias docker "podman"
+
     # fun stuff
     alias clock "tty-clock -c -C 3"
     alias wisdom "fortune | cowsay"
