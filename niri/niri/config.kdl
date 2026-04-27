@@ -164,6 +164,7 @@ binds {
     Mod+E       { spawn "nautilus"; }
     //Mod+Alt+L   { spawn "hyprlock"; }
     Mod+Alt+L   { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    Mod+Alt+M   { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
     Mod+Q repeat=false { close-window; }
 
 
