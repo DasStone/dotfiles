@@ -365,3 +365,22 @@ layer-rule {
 }
 // ----------------------
 
+window-rule {
+    match app-id="gamescope"
+    variable-refresh-rate true
+}
+
+window-rule {
+    match app-id="monsterhunterwilds.exe"
+    variable-refresh-rate true
+}
+
+window-rule {
+    match app-id="steam_app"
+    variable-refresh-rate true
+}
+
+window-rule {
+    match app-id="deadlock.exe"
+    variable-refresh-rate true
+}
