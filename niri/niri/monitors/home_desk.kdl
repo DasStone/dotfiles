@@ -1,5 +1,5 @@
 output "DP-1" {
-    mode "1920x1080@165.003"
+    mode "1920x1080@143.981"
     scale 1
     position x=0 y=0
     variable-refresh-rate on-demand=true
@@ -13,7 +13,7 @@ output "DP-2" {
 }
 
 output "HDMI-A-1" {
-    mode "1920x1080@143.993"
+    mode "1920x1080@60.000"
     scale 1
     position x=-1080 y=-290
     // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
