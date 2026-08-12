@@ -26,7 +26,7 @@ environment {
     QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
     QT_QPA_PLATFORMTHEME "qt6ct"
 
-    GDK_BACKEND "wayland,x11"
+    GDK_BACKEND "wayland"
     CLUTTER_BACKEND "wayland"
 
     ELECTRON_OZONE_PLATFORM_HINT "wayland"
