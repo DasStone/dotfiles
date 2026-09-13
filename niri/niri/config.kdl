@@ -16,6 +16,24 @@ gestures {
 environment {
     SSH_AUTH_SOCK "/run/user/1000/ssh-agent.socket"
 
+    // https://wiki.hyprland.org/Configuring/Environment-variables/
+    GDK_BACKEND "wayland,x11"
+    CLUTTER_BACKEND "wayland"
+
+    XDG_CURRENT_DESKTOP "Niri"
+    XDG_SESSION_TYPE "wayland"
+    XDG_SESSION_DESKTOP "Niri"
+
+    QT_QPA_PLATFORM "wayland;xcb"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+
+    // Electron
+    ELECTRON_OZONE_PLATFORM_HINT "wayland"
+}
+
+/-environment {
+
     XDG_CURRENT_DESKTOP "Niri"
     XDG_SESSION_DESKTOP "Niri"
     XDG_SESSION_TYPE "wayland"
@@ -115,11 +133,9 @@ layout {
     }
 }
 
-
 hotkey-overlay {
     skip-at-startup
 }
-
 
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
@@ -166,8 +182,8 @@ binds {
     Mod+R       { spawn "wofi" "--show" "drun"; }
     Mod+E       { spawn "nautilus"; }
     //Mod+Alt+L   { spawn "hyprlock"; }
-    Mod+Alt+L   { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
-    Mod+Alt+M   { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    // Mod+Alt+L   { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    // Mod+Alt+M   { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
     Mod+Q repeat=false { close-window; }
 
 
@@ -296,48 +312,6 @@ binds {
     Mod+X { spawn-sh "chamel clear"; }
 }
 
-// --- pretty stuff ---
-
-window-rule {
-    geometry-corner-radius 10
-    clip-to-geometry true
-    draw-border-with-background false
-      background-effect {
-        blur true
-        xray false
-      }
-}
-
-blur {
-    passes 1        // more passes = stronger blur (default: 3)
-    offset 3.0      // sample distance per pass (default: 3.0)
-    noise 0.02      // grain overlay (default: 0.02)
-    saturation 1.5  // color saturation boost (default: 1.5)
-}
-
-/-window-rule {
-    //match app-id="Loupe"
-
-    popups {
-        // Matches the default libadwaita pop-up corner radius.
-        geometry-corner-radius 10
-
-        // Note: it'll look better to set background opacity through your GTK theme CSS and not here.
-        opacity 0.9
-
-        background-effect {
-            blur true
-        }
-    }
-}
-
-animations {
-    // off
-
-    // Slow down all animations by this factor. Values below 1 speed them up instead.
-    slowdown 0.8
-}
-
 cursor {
     xcursor-theme "catppuccin-mocha-dark-cursors"
     xcursor-size 20
@@ -351,9 +325,9 @@ overview {
 // --------------------
 
 // --- noctalia shell ---
-spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "noctalia"
 
-debug {
+/-debug {
     // Allows notification actions and window activation from Noctalia.
     honor-xdg-activation-with-invalid-serial
 }
@@ -364,7 +338,7 @@ layer-rule {
 }
 
 /* Noctalia: blur everywhere without xray for a better look */
-layer-rule {
+/-layer-rule {
     match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
     background-effect {
         xray false
@@ -390,4 +364,19 @@ window-rule {
 window-rule {
     match app-id="deadlock.exe"
     variable-refresh-rate true
+}
+
+// --- testing
+
+window-rule {
+    geometry-corner-radius 20
+    clip-to-geometry true
+    draw-border-with-background false
+}
+
+window-rule {
+    match app-id="^neovide$"
+    match app-id="^kitty$"
+    match app-id="^dev.zed.Zed$"
+    background-effect { blur true; }
 }
