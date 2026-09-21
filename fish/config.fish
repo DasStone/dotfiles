@@ -9,8 +9,9 @@ if status is-interactive
         fish_vi_key_bindings --no-erase insert
     end
 
-    # nix
-    source /home/astein/.nix-profile/etc/profile.d/nix.fish
+    # Nix
+    source "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish"
+    direnv hook fish | source
 
     # Powerline
     starship init fish | source
