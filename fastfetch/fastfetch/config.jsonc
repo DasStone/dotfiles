@@ -33,7 +33,7 @@
         },
         {
             "type": "packages",
-            "format": "{} (pacman)",
+            "format": "{pacman} (pacman)",
             "key": " ",
         },
         {
